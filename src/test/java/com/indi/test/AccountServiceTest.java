@@ -1,7 +1,7 @@
 package com.indi.test;
 
+import com.indi.biz.AccountBiz;
 import com.indi.config.SpringConfig;
-import com.indi.biz.IAccountService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class AccountServiceTest {
 
     @Autowired
-    private IAccountService as;
+    private AccountBiz as;
 
     @Test
     public void testTransfer() {
